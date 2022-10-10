@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor:none;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+  /* demo */
+  /* body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: #222222;
+  } */
+
+  .container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: #1E1A1D;
+  }
+
+
+  .addbtn {
+    width: 700px;
+    background: #333333;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    transition: 0.3s;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-size: bold;
+  }
+
+  .addbtn:hover {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: #333333;
+  }
+
+  .ul {
+    position: relative;
+    display: block;
+    overflow-wrap: normal;
+    width: 600px;
+    overflow: hidden;
+    margin-right: 590px;
+    margin-top: 20px;
+    margin-left: 582px;
+    padding: 5px 0px 0px 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Alkalami', serif;
+    list-style-type: none;
+  }
+
+  .remove {
+    position: absolute;
+    right: 0px;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px 16px 0px 10px;
+    margin: -2px;
+  }
+  .remove:hover {
+    background: #C44536;
+    cursor: pointer;
+  }
+
+  .liclass {
+    margin-right: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
