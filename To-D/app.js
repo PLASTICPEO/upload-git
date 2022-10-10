@@ -8,7 +8,7 @@ const addSound = document.querySelector('.addSound');
 
 const searchBtn = document.querySelector(".addbtn");
 
-
+const newVariable = [];
 
 
 searchBtn.addEventListener('click', (event)=>{
